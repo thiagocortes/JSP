@@ -1,0 +1,38 @@
+body{
+	width: 100%;
+}
+h1{
+	font-size:25px;
+	text-shadow:2px 2px 2px #666;
+
+}
+.entrada{
+	width:400px;
+	padding:30px;
+	border:1px solid #666;
+	border-radius:5px;
+	text-align:center;
+	margin: 100px auto;
+	box-shadow:2px 2px 2px #666;
+	background-color: #999;	
+}
+input[type=number]{
+	box-shadow:2px 2px 2px #666;
+	border-radius:3px;
+	width: 150px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+input[type=submit]{
+	box-shadow:1px 1px 1px #666;
+	width: 150px;
+	height:25px;
+	background-color: #888;
+	color:white;
+	border-radius:2px;
+}
+input[type=submit]:hover{
+	background-color: white;
+	color:#888;
+
+}

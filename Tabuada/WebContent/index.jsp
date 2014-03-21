@@ -4,13 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="css/css.css">
 <title>Tabuada</title>
 </head>
 <body>
-	<div style="margin:0 auto">
+	<div class="entrada">
 		<form action="ServTabuada" method="POST">
 			<label>
-				<span>Digite um Numero</span><br>
+				<span><h1>Digite um Numero</h1></span><br>
 				<input type="number" name="numero_1"><br>
 				<input type="submit" value="calcular">
 			</label>

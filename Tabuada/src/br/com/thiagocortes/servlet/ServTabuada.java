@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.jasper.tagplugins.jstl.core.Out;
-
 /**
  * Servlet implementation class ServTabuada
  */
@@ -38,9 +36,19 @@ public class ServTabuada extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int numero =Integer.parseInt(request.getParameter("numero_1"));
-		request.setAttribute("numero", numero);
-		request.getRequestDispatcher("exibir_tabuada.jsp").forward(request, response);
+		String numeros = request.getParameter("numero_1");
+		int numero;
+		
+		if(numeros != ""){
+			numero = Integer.parseInt(numeros);
+			request.setAttribute("numero", numero);
+			request.getRequestDispatcher("exibir_tabuada.jsp").forward(request, response);
+		}
+		else{
+			PrintWriter printar = new PrintWriter("");
+			printar.print("Você precisa prencher o campo com um numero válido.");
+		}
+		
 		
 	}
 

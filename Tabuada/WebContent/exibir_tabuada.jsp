@@ -66,5 +66,6 @@
 		</td>
 	</tr>
 </table>
+<a href="index.jsp">Voltar</a>
 </body>
 </html>
